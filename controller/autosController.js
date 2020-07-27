@@ -27,7 +27,7 @@ const router = require("../routes/home");
                 let concesionarias = db.leerJSON();
                 // con el .toLowerCase() convierto todas el texto a minuscula 
                 concesionarias.forEach(concesionaria =>{
-                    res.write('↓ En  '+concesionaria.sucursal+' ↓'+"\n"+"\n")
+                    res.write('🏠 En  '+concesionaria.sucursal+"\n"+"\n")
                     concesionaria.autos.forEach(auto =>{
                         if (auto.marca.toLowerCase() == marca.toLowerCase()){
                             encuentra=true;
