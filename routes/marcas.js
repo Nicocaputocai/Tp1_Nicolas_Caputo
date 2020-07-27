@@ -4,6 +4,6 @@ const marcasController = require ("../controller/marcasController"); // importo 
 
 router.get('/', marcasController.index) //pongo la url y llamo de mi archivo home controller al objeto index
 router.get('/:marca', marcasController.marca)
-
+ 
 
 module.exports = router; //exporto este archivo 
